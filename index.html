@@ -13,10 +13,11 @@
     <style> @import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap'); </style>
     <!-- main css  -->
     <link rel="stylesheet" href="index.css">
+<script src="assets/js/scrollreveal.min.js"></script>
+
 </head>
 <body>
-
-<!-- ============================================== haeder ======================================  -->
+<!-- ======================================== haeder ========================== -->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
@@ -35,7 +36,7 @@
                         <a href="#features" class="nav__link">features</a>
                     </li>
                     <li class="nav__item">
-                        <button class="button nav__link"> sign up </button>
+                        <button class="button"> sign up </button>
                     </li>
                 </ul>
                 <div class="nav__close" id="nav-close">
@@ -47,10 +48,9 @@
             </div>
         </nav>
     </header>
-
-<!-- ================================================= main ==============================  -->
+<!-- ========================================= main =========================== -->
     <main class="main">
-    <!-- ============================= home -->
+    <!-- =================================================== home -->
     <section class="home section" id="home">
         <!-- --------------- fro graphics ----------------  -->
         <div class="shape shape-big"></div>
@@ -102,7 +102,7 @@
             <a href="#" class="home_start">start</a>
         </div>
     </section>
-    <!-- =========================== about  -->
+    <!-- =================================================== about  -->
     <scetion class="section about" id="section">
         <div class="about-container container grid">
             <div class="about-container-group">
@@ -132,7 +132,7 @@
                     </p>
                 </div>
             </div>
-            <div class="about-container-data">
+            <div class="about-container-data about-container-data-right">
                 <h2 class="about-container-data-title">
                     machine with <br> future.
                 </h2>
@@ -149,7 +149,7 @@
                     <h3 class="about-container-group-card-title"> 2.500++</h3>
                     <p class="about-container-group-card-disc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores explicabo architecto.
                     </p>
-                </div>
+                </div> 
             </div>
             <div class="about-container-data">
                 <h2 class="about-container-data-title">
@@ -162,14 +162,14 @@
             </div>
         </div>
     </scetion>
-    <!-- =========================== products  -->
+    <!-- =================================================== products  -->
     <scetion class="section products" id="products">
         <h2 class="section-title">
             choose your product <br> from the tesla models
         </h2>
-        <div class="product-container container">
-            <div>
-                <article class="product-card">
+        <div class="product-container container swiper">
+            <div class="swiper-wrapper">
+                <div class="product-card swiper-slide">
                     <div class="shape shape-smaller"></div>
                     <h1 class="product-card-title">
                         Model S
@@ -196,9 +196,8 @@
                     <button class="product-card-shop button">
                         <i class="ri-shopping-cart-2-line"></i>
                     </button>
-                </article>
-
-                <article class="product-card">
+                </div>
+                <div class="product-card swiper-slide">
                     <div class="shape shape-smaller"></div>
                     <h1 class="product-card-title">
                         Model 3
@@ -225,9 +224,8 @@
                     <button class="product-card-shop button">
                         <i class="ri-shopping-cart-2-line"></i>
                     </button>
-                </article>
-                
-                <article class="product-card">
+                </div>
+                <div class="product-card swiper-slide">
                     <div class="shape shape-smaller"></div>
                     <h1 class="product-card-title">
                         Model X
@@ -254,9 +252,8 @@
                     <button class="product-card-shop button">
                         <i class="ri-shopping-cart-2-line"></i>
                     </button>
-                </article>
-                
-                <article class="product-card">
+                </div>               
+                <div class="product-card swiper-slide">
                     <div class="shape shape-smaller"></div>
                     <h1 class="product-card-title">
                         Model Y
@@ -283,9 +280,8 @@
                     <button class="product-card-shop button">
                         <i class="ri-shopping-cart-2-line"></i>
                     </button>
-                </article>
-                
-                <article class="product-card">
+                </div> 
+                <div class="product-card swiper-slide">
                     <div class="shape shape-smaller"></div>
                     <h1 class="product-card-title">
                         Model O
@@ -312,76 +308,251 @@
                     <button class="product-card-shop button">
                         <i class="ri-shopping-cart-2-line"></i>
                     </button>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </scetion>
+    <!-- =================================================== features  -->
+    <scetion class="section features" id="features ">
+        <h2 class="section-title">
+            More feature
+        </h2>
+        <div class="features-container container grid">
+            <div class="features-group">
+                <img src="assets/img/features.png" alt="" class="features-group-img">
+                <div class="features-group-card features-group-card-1">
+                    <h3 class="features-group-card-title">800v</h3>
+                    <p class="features-group-card-description">Turbo <br> charging</p>
+                </div>
+
+                <div class="features-group-card features-group-card-2">
+                    <h3 class="features-group-card-title">350 km/h</h3>
+                    <p class="features-group-card-description"> Speed</p>
+                </div>
+
+                <div class="features-group-card features-group-card-3">
+                    <h3 class="features-group-card-title">560 km</h3>
+                    <p class="features-group-card-description">range</p>
+                </div>
+            </div>
+        </div>
+        <img src="assets/img/map.svg" alt="" class="features-map">
+    </scetion>
+    <!-- =================================================== technology  -->
+    <section class="technology section" id="technology">
+        <h2 class="technology-title">
+            technology in car
+        </h2>    
+        <div class="tecnology-container container">
+            <ul class="technology-list">
+                <li class="tecnology-list-li">
+                    <button class="technology-item active-featured" data-filter="all">
+                        <span>all</span>
+                    </button>
+                </li>
+                <li class="tecnology-list-li">
+                    <button class="technology-item" data-filter=".model-s">
+                        <img src="assets/img/logo4.png" alt="">
+                    </button>
+                </li>
+                <li class="tecnology-list-li">
+                    <button class="technology-item" data-filter=".model-3">
+                        <img src="assets/img/logo3.png" alt="">
+                    </button>
+                </li>
+                <li class="tecnology-list-li">
+                    <button class="technology-item" data-filter=".model-x">
+                        <img src="assets/img/logo2.png" alt="">
+                    </button>
+                </li>
+                <li class="tecnology-list-li">
+                    <button class="technology-item" data-filter=".model-y">
+                        <img src="assets/img/logo1.png" alt="">
+                    </button>
+                </li>
+            </ul>
+            <div class="technology-content grid">
+                <article class="technology-content-card mix model-s">
+                    <div class="shape shape-small"></div>
+                    <h1 class="technology-content-card-title">Model S</h1>
+                    <h3 class="technology-content-card-subtitle">Plaid</h3>
+                    <img src="assets/img/featured1.png" alt="" class="technology-content-card-img">
+                    <h3 class="technology-content-card-price">$179,000.00</h3>
+                    <button class="technology-content-card-button button">
+                        <i class="ri-shopping-bag-2-line"></i>
+                    </button>
+                </article>
+                <article class="technology-content-card mix model-3">
+                    <div class="shape shape-small"></div>
+                    <h1 class="technology-content-card-title">Model 3</h1>
+                    <h3 class="technology-content-card-subtitle">plaid</h3>
+                    <img src="assets/img/featured2.png" alt="" class="technology-content-card-img">
+                    <h3 class="technology-content-card-price">$199,000.00</h3>
+                    <button class="technology-content-card-button button">
+                        <i class="ri-shopping-bag-2-line"></i>
+                    </button>
+                </article>
+                <article class="technology-content-card mix model-x">
+                    <div class="shape shape-small"></div>
+                    <h1 class="technology-content-card-title">Model X</h1>
+                    <h3 class="technology-content-card-subtitle">plaid</h3>
+                    <img src="assets/img/featured3.png" alt="" class="technology-content-card-img">
+                    <h3 class="technology-content-card-price">$169,000.00</h3>
+                    <button class="technology-content-card-button button">
+                        <i class="ri-shopping-bag-2-line"></i>
+                    </button>
+                </article>
+                <article class="technology-content-card mix model-y">
+                    <div class="shape shape-small"></div>
+                    <h1 class="technology-content-card-title">Model Y</h1>
+                    <h3 class="technology-content-card-subtitle">plaid</h3>
+                    <img src="assets/img/featured4.png" alt="" class="technology-content-card-img">
+                    <h3 class="technology-content-card-price">$150,000.00</h3>
+                    <button class="technology-content-card-button button">
+                        <i class="ri-shopping-bag-2-line"></i>
+                    </button>
+                </article>
+                <article class="technology-content-card mix model-x">
+                    <div class="shape shape-small"></div>
+                    <h1 class="technology-content-card-title">Model O</h1>
+                    <h3 class="technology-content-card-subtitle">vegan</h3>
+                    <img src="assets/img/featured5.png" alt="" class="technology-content-card-img">
+                    <h3 class="technology-content-card-price">$220,000.00</h3>
+                    <button class="technology-content-card-button button">
+                        <i class="ri-shopping-bag-2-line"></i>
+                    </button>
                 </article>
             </div>
         </div>
-    </scetion>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-<div class="home_car_data">
-    <div class="home_car_data_icon">
-        <i class="ri-key-fill"></i>
-    </div>
-    <h2 class="home_car_data_number">A+</h2>
-    <h3 class="home_car_data_name">secure</h3>
-</div>      <div class="home_car_data">
-    <div class="home_car_data_icon">
-        <i class="ri-key-fill"></i>
-    </div>
-    <h2 class="home_car_data_number">A+</h2>
-    <h3 class="home_car_data_name">secure</h3>
-</div>      <div class="home_car_data">
-    <div class="home_car_data_icon">
-        <i class="ri-key-fill"></i>
-    </div>
-    <h2 class="home_car_data_number">A+</h2>
-    <h3 class="home_car_data_name">secure</h3>
-</div>      <div class="home_car_data">
-    <div class="home_car_data_icon">
-        <i class="ri-key-fill"></i>
-    </div>
-    <h2 class="home_car_data_number">A+</h2>
-    <h3 class="home_car_data_name">secure</h3>
-</div>      <div class="home_car_data">
-    <div class="home_car_data_icon">
-        <i class="ri-key-fill"></i>
-    </div>
-    <h2 class="home_car_data_number">A+</h2>
-    <h3 class="home_car_data_name">secure</h3>
-</div>      <div class="home_car_data">
-    <div class="home_car_data_icon">
-        <i class="ri-key-fill"></i>
-    </div>
-    <h2 class="home_car_data_number">A+</h2>
-    <h3 class="home_car_data_name">secure</h3>
-</div>
+    </section>
+    <!-- =================================================== offer  -->
+    <section class="offer section" id="offer">
+        <div class="offer-container container grid">
+            <img src="assets/img/offer-bg.png" alt="" class="offer-container-bg">
+            <div class="offer-container-data">
+                <h1 class="offer-container-data-title">
+                    do you want to receive <br> a offer specially made for you?
+                </h1>
+                <p class="offer-container-data-description">
+                    be the first one to receive all the latest news and updates regarding the EVs and our products by joining our mailing list. 
+                </p>
+                <a href="#" class="offer-container-data-btn button">
+                    subscribe
+                </a>
+            </div>
+            <img src="assets/img/offer.png" alt="" class="offer-container-car">
+        </div>
+    </section>
+    <!-- =================================================== logos  -->
+    <section class="logo section" id="logo">
+        <div class="logo-container container grid">
+            <div class="logo-container-content">
+                <img src="assets/img/logo1.png" alt="logo" class="logo-container-content-img">
+            </div>
+            <div class="logo-container-content">
+                <img src="assets/img/logo2.png" alt="logo" class="logo-container-content-img">
+            </div>
+            <div class="logo-container-content">
+                <img src="assets/img/logo3.png" alt="logo" class="logo-container-content-img">
+            </div>
+            <div class="logo-container-content">
+                <img src="assets/img/logo4.png" alt="logo" class="logo-container-content-img">
+            </div>
+            <div class="logo-container-content">
+                <img src="assets/img/logo5.png" alt="logo" class="logo-container-content-img">
+            </div>
+            <div class="logo-container-content">
+                <img src="assets/img/logo6.png" alt="logo" class="logo-container-content-img">
+            </div>
+        </div>
+    </section>
+    <!-- =================================================== footer  -->
+    <footer class="footer section">
+        <!-- --------------- for graphics ----------------  -->
+        <div class="shape shape-big"></div>
+        <div class="shape shape-small"></div>
+        <div class="footer-container container grid">
+            <div class="footer-container-content">
+                <a href="#" class="footer-container-content-logo nav__logo">
+                    <i class="ri-steering-fill"></i> Elecar
+                </a>
+                <p class="footer-container-content-description">
+                    our's mission is to accelerate the world’s <br> transition to sustainable energy.
+                </p>
+            </div>
+            <div class="footer-container-content">
+                <h2 class="footer-container-content-title">
+                    company.
+                </h2>
+                <ul class="footer-container-content-list">
+                    <li class="footer-container-content-item">
+                        <a href="#" class="footer-container-content-list"> about </a>
+                    </li>
+                    <li class="footer-container-content-item">
+                        <a href="#" class="footer-container-content-list"> cars </a>
+                    </li>
+                    <li class="footer-container-content-item">
+                        <a href="#" class="footer-container-content-list"> history </a>
+                    </li>
+                    <li class="footer-container-content-item">
+                        <a href="#" class="footer-container-content-list"> story </a>
+                    </li>
+                    <li class="footer-container-content-item">
+                        <a href="#" class="footer-container-content-list"> team </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-container-content">
+                <h2 class="footer-container-content-title">
+                    information.
+                </h2>
+                <ul class="footer-container-content-list">
+                    <li class="footer-container-content-item">
+                        <a href="#" class="footer-container-content-list"> asked query </a>
+                    </li>
+                    <li class="footer-container-content-item">
+                        <a href="#" class="footer-container-content-list"> find dealer </a>
+                    </li>
+                    <li class="footer-container-content-item">
+                        <a href="#" class="footer-container-content-list"> visit axivision </a>
+                    </li>
+                    <li class="footer-container-content-item">
+                        <a href="#" class="footer-container-content-list"> service </a>
+                    </li>
+                    <li class="footer-container-content-item">
+                        <a href="#" class="footer-container-content-list"> legal </a>
+                    </li>
+                    <li class="footer-container-content-item">
+                        <a href="#" class="footer-container-content-list"> privacy & policey </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-container-content">
+                <h2 class="footer-container-content-title">
+                    follow us on.
+                </h2>
+                <ul class="footer-container-content-list">
+                    <li class="footer-container-content-item footer-container-content-social-item">
+                        <a href="#" target="_blank" class="footer-container-content-list"> <i class="ri-twitter-fill"></i> </a>
+                    </li>
+                    <li class="footer-container-content-item footer-container-content-social-item">
+                        <a href="#" target="_blank" class="footer-container-content-list"> <i class="ri-facebook-circle-fill"></i> </a>
+                    </li>
+                    <li class="footer-container-content-item footer-container-content-social-item">
+                        <a href="#" target="_blank" class="footer-container-content-list"> <i class="ri-github-fill"></i> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer-container footer-container-footer">
+            &#169; nixon.inc <br> all rights reserved 2011-2022
+        </span>
+    </footer>
+    <!-- =================================================== scroll up  -->
+    <a href="#" class="scroll-up" id="scroll-up"> <i class="ri-arrow-up-circle-line"></i> </a>
     </main>
 </body>
 <script src="index.js"></script>
+
 </html>
